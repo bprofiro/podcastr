@@ -1,8 +1,12 @@
+.container {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 6.5rem);
+}
+
 .episode {
   max-width: 45rem;
-  height: calc(100vh - 6.5rem);
   padding: 3rem 2rem;
-  overflow-y: scroll;
   
   margin: 0 auto;
 

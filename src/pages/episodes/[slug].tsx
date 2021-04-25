@@ -32,10 +32,11 @@ export default function Episode({ episode }: EpisodeProps) {
   const { play } = usePlayer();
 
   return (
-    <div className={styles.episode}>
+    <div className={styles.container}>
       <Head>
         <title>{`${episode.title} | Podcastr`}</title>
       </Head>
+      <div className={styles.episode}>
 
       <div className={styles.thumbnail}>
         <Link href="/">
@@ -67,6 +68,7 @@ export default function Episode({ episode }: EpisodeProps) {
         className={styles.description}
         dangerouslySetInnerHTML={{ __html: episode.description }}
       />
+    </div>
     </div>
   )
 }

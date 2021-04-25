@@ -33,6 +33,16 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--gray-200);
+  transition: filter 0.2s;
+}
+
 body {
   background: var(--gray-50);
 }
